@@ -31,7 +31,7 @@ NEW_NAME:x:1000:1000:NEW_NAME,,,:/home/NEW_NAME:/bin/bash
 Modify the honeypot's fake filesystem to reflect the new username:
 ```bash
 # Use fsctl to access and modify the fake filesystem
-bin/fsctl share/cowrie/fs.pickle
+fsctl src/cowrie/data/fs.pickle
 
 # Rename the default user directory
 fs.pickle:/$ mv /home/phil /home/NEW_NAME
