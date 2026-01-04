@@ -2,9 +2,9 @@
 
 ## 1. Create AWS Accounts
 
-As always with AWS, things can quickly be updated, so this guide may be outdated. This guide works as of January 2025.
+As always with AWS, things can quickly be updated, so this guide may be outdated. This guide works as of January 2026.
 
-Amazon offers a free tier for new accounts, which includes Amazon Lightsail. Lightsail allows you to run a free virtual machine (VM) for 3 months, this VM is a little more powerful than the default EC2 free tier. You are going to create at least 2 AWS accounts, one for Grafana and Loki, and 1+ honeypot accounts. The idea is to set up the AWS accounts once such that the next time you login to the AWS console is to delete the account, since you can just SSH into the VM.
+Amazon has a Free account and a Paid account plan. Lightsail allows you to run a free virtual machine (VM) for 3 months on a Paid account, this VM is a little more powerful than the default EC2 free tier (6 months free on a paid account). You are going to create at least 2 AWS accounts, one for Grafana and Loki, and 1+ honeypot accounts. The idea is to set up the AWS accounts once such that the next time you login to the AWS console is to delete the account, since you can just SSH into the VM.
 
 ### Requirements
 - **Email Address**: Use a unique email for each account. Gmail users can leverage the "+" trick (e.g., `emailaddress+aws1@gmail.com`) to manage multiple accounts with one email. Emails sent to these addresses will still arrive in your primary inbox, and you can create filters to organize them.
