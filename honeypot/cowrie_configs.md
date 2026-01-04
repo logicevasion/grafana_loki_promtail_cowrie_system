@@ -40,7 +40,7 @@ Exit `fsctl` with `CTRL+D`.
 
 Restart Cowrie to apply the changes:
 ```bash
-bin/cowrie restart
+cowrie restart
 ```
 
 ---
@@ -110,7 +110,7 @@ After making all changes, restart Cowrie to apply the updated configurations:
 sudo su cowrie
 cd /home/cowrie/cowrie
 source cowrie-env/bin/activate
-bin/cowrie restart
+cowrie restart
 ```
 
 These changes help avoid being immediately identified as a default Cowrie honeypot.
