@@ -6,7 +6,7 @@
 Run the following commands to update the system and install necessary dependencies for Cowrie:
 ```bash
 sudo apt-get update
-sudo apt-get install git python3-virtualenv libssl-dev libffi-dev build-essential libpython3-dev python3-minimal authbind virtualenv
+sudo apt-get install git python3-pip python3-venv libssl-dev libffi-dev build-essential libpython3-dev python3-minimal authbind
 ```
 
 ### 2. Create a User for Cowrie
@@ -24,12 +24,12 @@ cd cowrie
 pwd  # Verify the path is /home/cowrie/cowrie
 
 # Create a virtual environment for Cowrie
-virtualenv cowrie-env
+python3 -m venv cowrie-env
 source cowrie-env/bin/activate
 
 # Update pip and install dependencies
-pip install --upgrade pip
-pip install --upgrade -r requirements.txt
+python -m pip install --upgrade pip
+python -m pip install -e .
 
 # Configure Cowrie
 cd etc/
@@ -59,7 +59,7 @@ To start Cowrie:
 sudo su cowrie
 cd ~/cowrie
 source cowrie-env/bin/activate
-bin/cowrie start
+cowrie start
 ```
 Your Cowrie honeypot is now running with the default settings.
 
