@@ -70,6 +70,8 @@ Amazon has a Free account and a Paid account plan. Lightsail allows you to run a
    - Update the `Port` directive (e.g., `Port 11222`) and save the file.
    - Restart the SSH service:
      ```bash
+     sudo systemctl disable --now ssh.socket
+     sudo systemctl enable --now ssh
      sudo systemctl restart ssh
      ```
    - Verify the service is running:
