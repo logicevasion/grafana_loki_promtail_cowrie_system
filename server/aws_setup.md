@@ -55,7 +55,7 @@ Amazon has a Free account and a Paid account plan. Lightsail allows you to run a
      ```bash
      chmod 400 path/to/private-key.pem
      ```
-   - Select the most expensive free tier instance size.
+   - Select the most expensive free (Linux) tier instance size.
    - Click Create instance. Wait for the instance to be ready.
    - Use the following command to connect to the VM:
      ```bash
