@@ -37,7 +37,7 @@ Amazon has a Free account and a Paid account plan. Lightsail allows you to run a
 
 ### Reminder for Temporary Accounts
 - If you’re using the account temporarily for the free tier:
-  - Mark your calendar to delete the account before the free period ends (3 months for Lightsail, 1 year for EC2).
+  - Mark your calendar to terminate AWS resources and delete the account before the free period ends (3 months for Lightsail, 1 year for EC2).
 
 ---
 
