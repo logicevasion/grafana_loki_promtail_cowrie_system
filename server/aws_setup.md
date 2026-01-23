@@ -67,7 +67,7 @@ Amazon has a Free account and a Paid account plan. Lightsail allows you to run a
      ```bash
      sudo vi /etc/ssh/sshd_config
      ```
-   - Update the `Port` directive (e.g., `Port 11222`) and save the file.
+   - Update the `Port` directive, it may look like \#Port 22 (e.g., `Port 11222`, delete the #) and save the file.
    - Restart the SSH service:
      ```bash
      sudo systemctl disable --now ssh.socket
